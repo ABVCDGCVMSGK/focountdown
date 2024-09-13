@@ -1,0 +1,50 @@
+body {
+    background-color: #1c1c1c;
+    display: flex;
+    overflow:hidden;  
+    overflow-x:hidden; 
+    overflow-y:hidden;
+}
+
+.logo img {
+    margin-left: 650px;
+    margin-top: -100px;
+}
+
+*,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      :root {
+        scroll-behavior: smooth;
+      }
+    }
+
+    .timer {
+     display: flex;
+    }
+
+    .timer__items {
+      display: flex;
+      font-size: 48px;
+    }
+
+    .timer__item {
+      position: relative;
+      margin-left: 10px;
+      margin-right: 10px;
+      color: #ffae42;
+      font-size: 100px;
+      transform: translateX(-625px) translateY(450px);
+      font-family: 'Montserrat';
+      padding-left: 25px;
+    }
+
+    .timer__item:not(:last-child)::after {
+      content: ':';
+      position: absolute;
+      right: -35px;
+    }
